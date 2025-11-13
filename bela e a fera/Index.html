@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bela e a Fera - Educação Encantada</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --laranja: #ff9800;
+      --amarelo: #ffeb3b;
+      --dourado: #ffca28;
+      --marrom: #4a2c0a;
+      --creme: #fff8e1;
+    }
+
+    body {
+      background-color: var(--creme);
+      color: var(--marrom);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* ======= CABEÇALHO ======= */
+    .navbar {
+      background: linear-gradient(90deg, var(--laranja), var(--dourado), var(--amarelo));
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: var(--marrom) !important;
+    }
+
+    .nav-link {
+      color: var(--marrom) !important;
+      font-weight: 500;
+      margin-left: 10px;
+    }
+
+    .nav-link:hover {
+      color: white !important;
+      text-shadow: 0 0 5px var(--marrom);
+    }
+
+    /* ======= CARROSSEL ======= */
+    .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    /* ======= SEÇÃO QUEM SOMOS ======= */
+    #quem-somos {
+      background-color: #fff3cd;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    #quem-somos h2 {
+      color: var(--marrom);
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    #quem-somos p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* ======= CARTÕES ======= */
+    .card {
+      border: none;
+      border-radius: 12px;
+      background-color: #fffbeb;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+
+    .card h5 {
+      color: var(--laranja);
+      font-weight: bold;
+    }
+
+    /* ======= RODAPÉ ======= */
+    footer {
+      background-color: var(--marrom);
+      color: var(--creme);
+      padding: 40px 0;
+    }
+
+    footer a {
+      color: var(--dourado);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+      color: white;
+    }
+
+    /* ======= RESPONSIVIDADE ======= */
+    @media (max-width: 768px) {
+      .carousel-item img {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= CABEÇALHO ======= -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Educação Encantada</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#quem-somos">Quem Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#midia">Mídia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= CARROSSEL ======= -->
+  <div id="carouselExampleIndicators" class="carousel slide mt-3" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagem/img 3.jpg" class="d-block w-100" alt="Castelo Encantado">
+      </div>
+      <div class="carousel-item">
+        <img src="imagem/disney-beauty-and-the-beast-laptop-tcplc1v3tah39tcu.jpg" class="" alt="Biblioteca Encantada">
+      </div>
+      <div class="carousel-item">
+        <img src="imagem/792d3beac05f2b525e191303e7a03db4.jpg" class="d-block w-100" alt="Sala de Estudos Encantada">
+      </div>
+      <div class="carousel-item">
+        <img src="imagem/280412-sepik-b48a155e.jpg" class="d-block w-100" alt="Rosa Encantada">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- ======= QUEM SOMOS ======= -->
+  <section id="quem-somos" class="py-5">
+    <div class="container">
+      <h2>Quem Somos</h2>
+      <p>
+        A <strong>Educação Encantada</strong> é um projeto inspirado no conto "A Bela e a Fera", que acredita no poder da beleza do conhecimento.  
+        Nosso objetivo é despertar o amor pelo aprendizado por meio de experiências mágicas e inspiradoras.  
+        Valorizamos a empatia, a sabedoria e a criatividade, acreditando que o ensino deve ser encantador e transformador.
+      </p>
+    </div>
+  </section>
+ 
+
+  <!-- ======= CARTÕES INFORMATIVOS ======= -->
+  <section id="cursos" class="container my-5">
+    <h2 class="text-center mb-5 text-warning">Nossos Cursos Encantados</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h5>📖 Leitura Encantada</h5>
+          <p>Desperte sua imaginação através da leitura de contos e histórias clássicas.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h5>🔢 Matemágica</h5>
+          <p>Aprenda matemática com diversão e desafios mágicos que estimulam o raciocínio lógico.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h5>⚗️ Ciência das Poções</h5>
+          <p>Experimente o mundo da ciência com experimentos fascinantes e seguros.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card p-3 text-center">
+          <h5>🏰 História e Encantos</h5>
+          <p>Descubra os contos e reinos que marcaram gerações, aprendendo com o passado.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card p-3 text-center">
+          <h5>🎨 Arte e Criatividade</h5>
+          <p>Expresse-se através da arte, criando obras inspiradas no mundo encantado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= RODAPÉ ======= -->
+  <footer id="contato">
+    <div class="container text-center">
+      <h5>Educação Encantada © 2025</h5>
+      <p>CNPJ: 12.345.678/0001-99</p>
+      <p>Telefone: <a href="tel:+55011987654321">+55 (11) 98765-4321</a></p>
+      <p>Email: <a href="mailto:contato@educacaoencantada.com.br">contato@educacaoencantada.com.br</a></p>
+
+      <div class="mt-3">
+        <a href="https://facebook.com" target="_blank" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="https://instagram.com" target="_blank" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter fa-lg"></i></a>
+      </div>
+
+      <p class="mt-3">Inspirado em "A Bela e a Fera" – Aprendizado com um toque de magia ✨</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
